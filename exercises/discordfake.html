@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Fake Discord Sidebar</title>
+
+        <style>
+            .sidebar-1 {
+                background-color: rgb(48, 47, 47);
+                position: fixed;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                width: 90px;
+                padding-top: 25px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            .image {
+                width: 70px;
+                height: 70px;
+                border-radius: 40px;
+                object-fit: cover;
+                margin-bottom: 8px;
+            }
+
+            .sidebar-2 {
+                background-color: rgb(71, 70, 70);
+                position: fixed;
+                top: 0;
+                left: 90px;
+                bottom: 0;
+                width:200px;
+                padding-top: 30px;
+                padding-left: 14px;
+            }
+
+            .first-row {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .info-text {
+                font-family: Arial;
+                font-size: 20px;
+                color: white;
+                display: inline-block;
+                width: 180px;
+                font-weight: bold;
+            }
+
+            .plus-sign {
+                width: 40px;
+                display: inline-block;
+            }
+
+            .plus {
+                width: 20px;
+            }
+
+            .second-row {
+                line-height: 50px;;
+            }
+
+            .channel-name {
+                font-family: Arial;
+                color: rgb(155, 153, 153);
+                font-size: 18px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="sidebar-1">
+            <img class="image" src="pictures/cat1.jpg">
+            <img class="image" src="pictures/cat2.webp">
+            <img class="image" src="pictures/cat3.jpg">
+        </div>
+
+        <div class="sidebar-2">
+            <div class="first-row">
+                <div class="info-text">
+                    INFO
+                </div>
+                <div class="plus-sign">
+                    <img class="plus" src="pictures/plus-discord.png">
+                </div>
+            </div>
+
+            <div class="second-row">
+                <div class="channel-name">
+                    # new-videos
+                </div>
+                <div class="channel-name">
+                    # updates
+                </div>
+                <div class="channel-name">
+                    # faq
+                </div>
+                
+            </div>
+        </div>
+    </body>
+</html>
